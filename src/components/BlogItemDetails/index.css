@@ -1,1 +1,14 @@
 /* Write your CSS code here */
+
+.blog-item-container {
+  border: 1px solid pink;
+  display: flex;
+  margin: 20px;
+}
+.img {
+  width: 200px;
+}
+
+.avatar {
+  width: 50px;
+}
