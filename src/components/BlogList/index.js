@@ -37,7 +37,9 @@ class BlogList extends Component {
     return (
       <div>
         {isLoading ? (
-          <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
+          <div data-testid="loader">
+            <Loader type="TailSpin" color="#00bfff" width={50} height={50} />
+          </div>
         ) : (
           blogList.map(item => <BlogItem blogItem={item} key={item.id} />)
         )}

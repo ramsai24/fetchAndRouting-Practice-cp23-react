@@ -4,11 +4,11 @@ import './index.css'
 
 const BlogItem = props => {
   const {blogItem} = props
-  console.log(blogItem)
+  // console.log(blogItem)
   const {imageUrl, id, title, topic, avatarUrl, author} = blogItem
 
   return (
-    <Link to={`/blogs/:${id}`}>
+    <Link to={`/blogs/${id}`}>
       <div className="blog-item-container">
         <img className="img" src={imageUrl} alt={title} />
         <div>
